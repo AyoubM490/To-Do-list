@@ -1,5 +1,5 @@
 import './style.css';
-import { addTask } from './modules/addTask.js';
+import addTask from './modules/addTask.js';
 
 const tasks = [
   {
@@ -15,9 +15,11 @@ const tasks = [
 ];
 
 const addTaskStatic = (tasks) => {
-  tasks.forEach((task) => {
-    addTask(task);
-  });
+  tasks
+    .sort((a, b) => a.index - b.index)
+    .forEach((task) => {
+      addTask(task);
+    });
 };
 
 addTaskStatic(tasks);

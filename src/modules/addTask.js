@@ -42,5 +42,4 @@ const addTask = (task) => {
   input.addEventListener('click', inputChecked);
 };
 
-// eslint-disable-next-line import/prefer-default-export
-export { addTask };
+export default addTask;
