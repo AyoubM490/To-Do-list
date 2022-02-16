@@ -30,8 +30,8 @@ To get a local copy up and running follow these simple steps.
 
 👤 **Ayoub Chahir**
 
-- GitHub: [@githubhandle](https://github.com/AyoubMs)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ayoub-chahir/)
+- GitHub: [@AyoubMS](https://github.com/AyoubMs)
+- LinkedIn: [Ayoub Chahir](https://www.linkedin.com/in/ayoub-chahir/)
 
 ## 🤝 Contributing
 
