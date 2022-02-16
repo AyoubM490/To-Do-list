@@ -49,10 +49,12 @@ window.addEventListener('load', () => {
     const inputChecked = () => {
       if (input.checked) {
         label.classList.add('checked');
-        tasks[task.index].bool = true;
+        task.bool = true;
+        saveStorage(tasksFromStore);
       } else {
         label.classList.remove('checked');
-        tasks[task.index].bool = false;
+        task.bool = false;
+        saveStorage(tasksFromStore);
       }
     };
     const remove = () => {
