@@ -14,7 +14,7 @@ const addTaskStatic = (tasks, text) => {
   saveStorage(tasks);
 };
 
-window.addEventListener('load', () => {
+document.addEventListener('DOMContentLoaded', () => {
   const tasksFromStore = getStorage();
   tasksFromStore.forEach((task) => {
     const container = document.querySelector('.container');
