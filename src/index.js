@@ -60,6 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
         saveStorage(tasksFromStore);
       }
     };
+
     const remove = () => {
       container.removeChild(li);
       removeTask(li, tasks);
@@ -78,7 +79,8 @@ add.addEventListener('click', (e) => {
   text.value = '';
 });
 
-clear.addEventListener('click', () => {
+clear.addEventListener('click', (e) => {
+  e.preventDefault();
   removeCompleted();
   trashCompleted();
 });
