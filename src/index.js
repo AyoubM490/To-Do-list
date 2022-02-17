@@ -1,10 +1,13 @@
 import './style.css';
 import addTask from './modules/addTask.js';
 import removeTask from './modules/removeTask.js';
+import removeCompleted from './modules/removeCompleted.js';
+import trashCompleted from './modules/completed.js';
 import { saveStorage, getStorage } from './modules/storage.js';
 
 const add = document.querySelector('.add');
 const text = document.querySelector('#text');
+const clear = document.querySelector('#clear');
 
 const tasks = [];
 
@@ -73,4 +76,9 @@ add.addEventListener('click', (e) => {
   e.preventDefault();
   addTaskStatic(tasks, text);
   text.value = '';
+});
+
+clear.addEventListener('click', () => {
+  removeCompleted();
+  trashCompleted();
 });
