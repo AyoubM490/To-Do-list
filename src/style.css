@@ -9,13 +9,6 @@ body {
   overflow-y: auto;
 }
 
-h1 {
-  text-align: center;
-  margin-top: 25vh;
-  color: blue;
-  text-transform: capitalize;
-}
-
 /* Form section */
 .form-section {
   height: 80vh;
@@ -115,18 +108,8 @@ ul {
   background-color: blue;
 }
 
-.checked {
-  text-decoration: line-through;
-  color: rgb(68, 68, 68);
-}
-
 .label {
   width: 100%;
-}
-
-.trash {
-  display: flex;
-  cursor: pointer;
 }
 
 .italics {
