@@ -1,10 +1,10 @@
-import { saveStorage, getStorage } from "./storage.js";
+import { saveStorage, getStorage } from './storage.js';
 
 const trashTask = (taskIndex) => {
   const storedTasks = getStorage();
 
   const currentTasks = storedTasks.filter(
-    (index) => storedTasks.indexOf(index) !== taskIndex
+    (index) => storedTasks.indexOf(index) !== taskIndex,
   );
 
   for (let i = 0; i < currentTasks.length; i += 1) {

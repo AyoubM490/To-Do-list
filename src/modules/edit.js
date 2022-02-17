@@ -1,4 +1,4 @@
-import { saveStorage } from "./storage.js";
+import { saveStorage } from './storage.js';
 
 const editTask = (text, tasks, task) => {
   const taskIndex = task.index;

@@ -1,5 +1,6 @@
-import { saveStorage, getStorage } from "./storage.js";
-import populateList from "../index.js";
+import { saveStorage, getStorage } from './storage.js';
+// eslint-disable-next-line import/no-cycle
+import populateList from '../index.js';
 
 const addNewTask = (input) => {
   const taskList = getStorage();
@@ -12,8 +13,8 @@ const addNewTask = (input) => {
   taskList.push(task);
 
   saveStorage(taskList);
-  input.value = "";
-  populateList(taskList);
+  input.value = '';
+  populateList();
   return task;
 };
 
