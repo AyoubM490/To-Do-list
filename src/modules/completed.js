@@ -1,4 +1,3 @@
-/* eslint-disable import/no-cycle */
 import { saveStorage, getStorage } from './storage.js';
 
 const trashCompleted = () => {
