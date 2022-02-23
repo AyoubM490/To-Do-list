@@ -1,3 +1,5 @@
+/* eslint-disable import/no-cycle */
+
 import { saveStorage } from './storage.js';
 
 const editTask = (text, tasks, task) => {

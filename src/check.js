@@ -1,4 +1,4 @@
-import '../style.css';
+import './style.css';
 
 const check = (checkbox, item) => {
   if (checkbox.checked) {
