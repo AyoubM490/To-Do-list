@@ -55,11 +55,4 @@ describe('test the function check', () => {
     check(checkbox, tasks[0]);
     expect(tasks[0].completed).toBeFalsy();
   });
-  test("test the last task if it's checked ", () => {
-    addNewTask(newTodoInput);
-    const tasks = getStorage();
-    checkbox.checked = true;
-    check(checkbox, tasks[tasks.length - 1]);
-    expect(tasks[tasks.length - 1].completed).toBeTruthy();
-  });
 });
